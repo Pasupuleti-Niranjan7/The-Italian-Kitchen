@@ -1,6 +1,6 @@
-import React from 'react'
 
 function Drinks() {
+  // Drinks
   let drinks = [
     {
       id: 1,

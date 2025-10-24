@@ -23,7 +23,7 @@ function HomeMenu() {
   return (
     <>
       <section className="sm:px-8 md:px-10 mx-auto px-5 my-25">
-        {/* Heading */}
+
         <motion.h3
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}

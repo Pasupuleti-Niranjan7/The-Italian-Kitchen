@@ -62,19 +62,16 @@ let Navbar = () => {
             {/* Email and phone icons */}
             <div className="flex gap-5 items-center justify-center mt-5">
               <div className="flex items-center justify-center bg-white h-10 w-10 rounded-full shadow-[0_0_1px_2px_#f0f0f0]">
-                <MdEmail size={22} />
+                <a href="mailto:pasupuletiniranjan49@gmail.com">
+                  <MdEmail size={17} />
+                </a>
               </div>
 
               <div className="flex items-center justify-center bg-white h-10 w-10 rounded-full shadow-[0_0_1px_2px_#f0f0f0]">
-                <FaPhoneAlt size={22} />
+                <a href="tel:+918142686499">
+                  <FaPhoneAlt size={15} />
+                </a>
               </div>
-            </div>
-
-            {/* Reservation Button */}
-            <div className="flex items-center justify-center my-8">
-              <button className="bg-[#000300] text-white px-3 py-2 rounded-2xl max-sm:text-base max-sm:rounded-lg font-semibold">
-                Make a Reservation
-              </button>
             </div>
           </div>
 
@@ -114,10 +111,13 @@ let Navbar = () => {
           {/* md:text-lg font-[Radio Canada] font-semibold */}
           <div className="sm:flex gap-4 items-center sm:flex-row">
             <div className="flex gap-3 max-md:hidden">
-              <MdEmail size={17} />
-              <FaPhoneAlt size={15} />
+              <a href="mailto:pasupuletiniranjan49@gmail.com">
+                <MdEmail size={17} />
+              </a>
+              <a href="tel:+918142686499">
+                <FaPhoneAlt size={15} />
+              </a>
             </div>
-
             <button className="bg-[#000300] text-white px-3 py-2 rounded-2xl font-medium text-sm lg:text-base max-md:hidden max-lg:hidden">
               Make a Reservation
             </button>

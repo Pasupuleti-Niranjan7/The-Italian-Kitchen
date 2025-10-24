@@ -13,9 +13,7 @@ function About() {
             className="w-300 md:w-400 md:h-120"
           />
         </div>
-        <div
-          className="flex flex-col items-center md:items-start justify-center gap-5 px-5 order-1 md:order-2 py-5"
-        >
+        <div className="flex flex-col items-center md:items-start justify-center gap-5 px-5 order-1 md:order-2 py-5">
           <h2 className="text-orange-400 text-4xl sm:text-5xl lg:text-6xl font-bold px-5 2xl:px-20">
             About Us
           </h2>
@@ -28,12 +26,13 @@ function About() {
             strive to bring the flavors of Italy to your table. Join us for an
             unforgettable dining experience.
           </p>
-          <div className="flex bg-orange-300 gap-2 items-center px-3 py-2 sm:px-4 sm:py-3 lg:px-5 lg:py-4 rounded-xl mx-4 2xl:mx-20">
+          <a
+            href="tel:+918142686499"
+            className="flex bg-orange-300 gap-2 items-center px-3 py-2 lg:px-4 lg:py-3 rounded-xl mx-4 2xl:mx-20 font-medium text-sm sm:text-base"
+          >
             <FaPhoneAlt className="size-4 sm:size-5" />
-            <button className="font-medium text-sm sm:text-lg md:text-xl">
-              READY TO ORDER?
-            </button>
-          </div>
+            READY TO ORDER?
+          </a>
         </div>
       </section>
     </>

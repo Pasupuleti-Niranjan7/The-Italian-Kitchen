@@ -1,4 +1,5 @@
 let Mainmenu = () => {
+  // Main menu items
   let mainmenu = [
     {
       id: 1,
@@ -68,6 +69,7 @@ let Mainmenu = () => {
 
   return (
     <>
+    {/* Main menu section */}
       {mainmenu.map((dish) => (
         <section
           key={dish.id}

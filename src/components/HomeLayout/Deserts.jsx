@@ -1,6 +1,7 @@
-import React from 'react'
 
 function Deserts() {
+
+  // Deserts 
   let desserts = [
     {
       id: 1,
@@ -27,6 +28,7 @@ function Deserts() {
       price: "$4.95",
     },
   ];
+  
   return (
     <>
       {desserts.map((dessert) => (

@@ -4,29 +4,30 @@ import StarRating from '../../StarRating';
 
 function HomeTestimonials() {
 
-        let testimonial = [
-          {
-            id: 1,
-            custName: "Maria L.",
-            rating: 5,
-            review:
-              "Niranjan's Food is a gem! The pasta is always perfectly cooked, and the sauces are bursting with flavor. Highly recommend!",
-          },
-          {
-            id: 2,
-            custName: "Paletee long",
-            rating: 4,
-            review:
-              "I had my birthday dinner here, and it was fantastic. The service was impeccable, and the food was out of this world. I'll be back for sure!",
-          },
-          {
-            id: 3,
-            custName: "Morata lautaro",
-            rating: 5,
-            review:
-              "Best Italian food in town! From the appetizers to the desserts, everything was delicious. The atmosphere is so charming and cozy.",
-          },
-        ];
+  // testimonial
+  let testimonial = [
+    {
+      id: 1,
+      custName: "Maria L.",
+      rating: 5,
+      review:
+        "Niranjan's Food is a gem! The pasta is always perfectly cooked, and the sauces are bursting with flavor. Highly recommend!",
+    },
+    {
+      id: 2,
+      custName: "Paletee long",
+      rating: 4,
+      review:
+        "I had my birthday dinner here, and it was fantastic. The service was impeccable, and the food was out of this world. I'll be back for sure!",
+    },
+    {
+      id: 3,
+      custName: "Morata lautaro",
+      rating: 5,
+      review:
+        "Best Italian food in town! From the appetizers to the desserts, everything was delicious. The atmosphere is so charming and cozy.",
+    },
+  ];
 
   return (
     <>
@@ -52,6 +53,8 @@ function HomeTestimonials() {
           <p className="h-2 w-2 rounded-full bg-orange-400"></p>
           <p className="h-2 w-2 rounded-full bg-orange-400"></p>
         </motion.div>
+        
+        {/* Testimonial Section */}
         <section className="my-10 flex flex-col md:flex-row gap-5 justify-center">
           {testimonial.map((cust) => (
             <motion.div

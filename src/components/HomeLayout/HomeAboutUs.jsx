@@ -6,7 +6,6 @@ let HomeAboutUs = () => {
         return (
           <>
             <section className="flex flex-col justify-between items-center md:justify-start md:flex-row gap-3 pr-4 my-15 bg-gray-50">
-
               <div className="order-2 mt-5 md:order-1">
                 <img
                   src="/public/image1.png"
@@ -14,8 +13,10 @@ let HomeAboutUs = () => {
                   className="w-300 md:w-400 md:h-120"
                 />
               </div>
+
+              {/* About Us Section */}
               <motion.div
-                initial={{ opacity: 0, y: 70 }}
+                initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7 }}
                 viewport={{ once: true, amount: 0.3 }}
@@ -34,13 +35,16 @@ let HomeAboutUs = () => {
                   we strive to bring the flavors of Italy to your table. Join us
                   for an unforgettable dining experience.
                 </p>
-                <div className="flex bg-orange-300 gap-2 items-center px-3 py-2 lg:px-4 lg:py-3 rounded-xl mx-4 2xl:mx-20">
+                  
+                <a
+                  href="tel:+918142686499"
+                  className="flex bg-orange-300 gap-2 items-center px-3 py-2 lg:px-4 lg:py-3 rounded-xl mx-4 2xl:mx-20 font-medium text-sm sm:text-base"
+                >
                   <FaPhoneAlt className="size-4 sm:size-5" />
-                  <button className="font-medium text-sm sm:text-base">
-                    READY TO ORDER?
-                  </button>
-                </div>
+                  READY TO ORDER?
+                </a>
               </motion.div>
+
             </section>
           </>
         );

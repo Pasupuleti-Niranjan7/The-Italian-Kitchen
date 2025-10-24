@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 let HomeServices = () => {
-
+        // Our Services
         let services = [
           {
             id: 1,
@@ -22,9 +22,9 @@ let HomeServices = () => {
         return (
           <>
             <section className="max-w-[1300px] mx-auto px-5 flex flex-col items-center my-10">
-                {/* heading */}
+
               <h3
-                initial={{ opacity: 0, y: 70 }}
+                initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7 }}
                 viewport={{ once: true, amount: 0.3 }}
@@ -34,7 +34,7 @@ let HomeServices = () => {
               </h3>
 
               <motion.div
-                initial={{ opacity: 0, y: 70 }}
+                initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7 }}
                 viewport={{ once: true, amount: 0.3 }}
@@ -45,11 +45,12 @@ let HomeServices = () => {
                 <p className="h-2 w-2 rounded-full bg-orange-400"></p>
               </motion.div>
 
+              {/* Services Section */}
               <motion.section 
-                  initial={{opacity: 0, y: 70}}
+                  initial={{opacity: 0, y: 50}}
                   whileInView={{opacity: 1, y: 0}}
                   transition={{duration: 0.7}}
-                  onViewportEnter={{once: true, amount: 0.3}} className="flex flex-col md:flex-row my-5 gap-5">
+                  onViewportEnter={{once: true, amount: 0.3}} className=" flex flex-col md:flex-row my-5 gap-5">
                 {services.map((service) => (
                   <div 
                   key={service.id} className="flex flex-col items-center bg-white p-1 shadow-[0_0_1px_2px_#f0f0f0] rounded-md gap-1 md:w-90 lg:w-120 2xl:w-140">

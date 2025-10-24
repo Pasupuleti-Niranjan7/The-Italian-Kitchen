@@ -1,4 +1,5 @@
 
+import { Link } from "react-router";
 import video from "/banner_video.mp4";
 
 let HomeBanner = () => {
@@ -21,7 +22,6 @@ let HomeBanner = () => {
             </div>
           </div>
 
-          {/* Experience it content */}
           <p className="text-base sm:text-xl md:text-xl lg:text-2xl font-semibold text-preeety text-center md:text-left">
             Experience Authentic <br /> Italian Cuisine
           </p>
@@ -29,15 +29,14 @@ let HomeBanner = () => {
           {/* Buttons */}
           <section className="flex gap-4 md:flex-col w-full items-center justify-center md:items-start">
             <button className="bg-orange-300 px-3 py-2 md:py-3 md:px-4 lg:px-5 lg:py-4 lg:text-lg text-wrap font-medium text-base rounded-xl ">
-              VIEW MENU
+              <Link to="menu">View Menu</Link>
             </button>
             <button className="bg-black text-white px-3 py-2 md:py-3 md:px-4 font-medium text-base rounded-xl lg:px-7 lg:py-4 lg:text-lg">
-              RESERVE A TABLE
+              <Link to="contact">RESERVE A TABLE</Link>
             </button>
           </section>
         </section>
 
-        {/* Video */}
         <video
           autoPlay
           loop

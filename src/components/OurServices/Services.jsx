@@ -1,5 +1,4 @@
 
-
 let Services = () => {
   let services = [
     {
@@ -21,7 +20,6 @@ let Services = () => {
   return (
     <>
       <section className="max-w-[1300px] mx-auto px-5 flex flex-col items-center my-15">
-        {/* heading */}
         <h3
           initial={{ opacity: 0, y: 70 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -43,7 +41,8 @@ let Services = () => {
           <p className="h-2 w-2 rounded-full bg-orange-400"></p>
           <p className="h-2 w-2 rounded-full bg-orange-400"></p>
         </div>
-
+        
+        {/* Services */}
         <section
           initial={{ opacity: 0, y: 70 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -1,33 +1,32 @@
-import React from 'react'
+import React from "react";
 
 function Sidedishes() {
-
-        let sidedishes = [
-          {
-            id: 1,
-            img: "/public/sides1.jpg",
-            name: "Garlic Bread",
-            details:
-              "Freshly baked bread topped with garlic butter and parsley.",
-            price: "$4.95",
-          },
-          {
-            id: 2,
-            img: "/public/sides2.jpg",
-            name: "Caprese Salad",
-            details:
-              "Slices of ripe tomatoes, fresh mozzarella, and basil, drizzled with extra virgin olive oil and balsamic glaze.",
-            price: "$6.95",
-          },
-          {
-            id: 3,
-            img: "/public/sides3.jpg",
-            name: "Fried Calamari",
-            details:
-              "Lightly breaded and fried calamari rings, served with marinara sauce.",
-            price: "$8.95",
-          },
-        ];
+  // Side dishes
+  let sidedishes = [
+    {
+      id: 1,
+      img: "/public/sides1.jpg",
+      name: "Garlic Bread",
+      details: "Freshly baked bread topped with garlic butter and parsley.",
+      price: "$4.95",
+    },
+    {
+      id: 2,
+      img: "/public/sides2.jpg",
+      name: "Caprese Salad",
+      details:
+        "Slices of ripe tomatoes, fresh mozzarella, and basil, drizzled with extra virgin olive oil and balsamic glaze.",
+      price: "$6.95",
+    },
+    {
+      id: 3,
+      img: "/public/sides3.jpg",
+      name: "Fried Calamari",
+      details:
+        "Lightly breaded and fried calamari rings, served with marinara sauce.",
+      price: "$8.95",
+    },
+  ];
   return (
     <>
       {sidedishes.map((sidedish) => (
@@ -58,4 +57,4 @@ function Sidedishes() {
   );
 }
 
-export default Sidedishes
+export default Sidedishes;
