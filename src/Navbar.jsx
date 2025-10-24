@@ -45,8 +45,12 @@ let Navbar = () => {
               <li className="p-3 border-b border-b-gray-300">
                 <Link to="about">About</Link>
               </li>
-              <li className="p-3 border-b border-b-gray-300">Menu</li>
-              <li className="p-3 border-b border-b-gray-300">Services</li>
+              <li className="p-3 border-b border-b-gray-300">
+                <Link to="menu">Menu</Link>
+              </li>
+              <li className="p-3 border-b border-b-gray-300">
+                <Link to="services">Services</Link>
+              </li>
               <li className="p-3 border-b border-b-gray-300">Testimonials</li>
               <li className="p-3 ">Contact</li>
             </nav>
@@ -90,10 +94,10 @@ let Navbar = () => {
               <Link to="about">About</Link>
             </li>
             <li className="md:text-base lg:text-lg font-[Radio Canada] font-semibold">
-              Menu
+              <Link to="menu">Menu</Link>
             </li>
             <li className="md:text-base lg:text-lg font-[Radio Canada] font-semibold">
-              Services
+              <Link to="services">Services</Link>
             </li>
             <li className="md:text-base lg:text-lg font-[Radio Canada] font-semibold">
               Testimonials
