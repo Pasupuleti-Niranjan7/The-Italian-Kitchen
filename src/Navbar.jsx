@@ -16,7 +16,7 @@ let Navbar = () => {
 
   return (
     <>
-      <header className="shadow-base sticky top-0 max-sm:-mt-2 bg-white">
+      <header className="shadow-[0_0_1px_2px_#f0f0f0] sticky top-0 max-sm:-mt-2 bg-white">
         <section className="px-5 h-10 flex justify-between md:gap-10 items-center relative py-10 sm:px-8 md:px-10">
           {/* For Mobile View */}
           {/* Menu open and close icons*/}
@@ -51,8 +51,12 @@ let Navbar = () => {
               <li className="p-3 border-b border-b-gray-300">
                 <Link to="services">Services</Link>
               </li>
-              <li className="p-3 border-b border-b-gray-300">Testimonials</li>
-              <li className="p-3 ">Contact</li>
+              <li className="p-3 border-b border-b-gray-300">
+                <Link to="testimonials">Testimonials</Link>
+              </li>
+              <li className="p-3 ">
+                <Link to="contact">Contact</Link>
+              </li>
             </nav>
 
             {/* Email and phone icons */}
@@ -100,10 +104,10 @@ let Navbar = () => {
               <Link to="services">Services</Link>
             </li>
             <li className="md:text-base lg:text-lg font-[Radio Canada] font-semibold">
-              Testimonials
+              <Link to="testimonials">Testimonials</Link>
             </li>
             <li className="md:text-base lg:text-lg font-[Radio Canada] font-semibold">
-              Contact
+              <Link to="contact">Contact</Link>
             </li>
           </nav>
 

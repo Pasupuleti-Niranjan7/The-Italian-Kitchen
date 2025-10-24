@@ -6,11 +6,11 @@ let HomeContact = () => {
           <>
             <section className="flex flex-col justify-center my-25 px-5 sm:px-8 md:px-10">
               <motion.h3
-                initial={{ opacity: 0, y: 70 }}
+                initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7 }}
                 viewport={{ once: true, amount: 0.3 }}
-                className="font-medium text-lg md:text-2xl lg:text-4xl text-center flex flex-col items-center"
+                className="font-semibold text-xl md:text-4xl lg:text-4xl text-center flex flex-col items-center"
               >
                 Contact Us
               </motion.h3>
