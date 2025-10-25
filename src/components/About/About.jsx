@@ -8,7 +8,7 @@ function About() {
       <section className="flex flex-col justify-between items-center md:justify-start md:flex-row gap-3 pr-4 my-15 bg-gray-50">
         <div className="order-2 mt-5 md:order-1">
           <img
-            src="/public/image1.png"
+            src="/image1.png"
             alt=""
             className="w-300 md:w-400 md:h-120"
           />
