@@ -3,7 +3,7 @@ let Mainmenu = () => {
   let mainmenu = [
     {
       id: 1,
-      img: "/public/menu1.jpg",
+      img: "/menu1.jpg",
       name: "Pizza Margherita",
       details:
         "Classic Neapolitan pizza topped with fresh mozzarella, basil, and San Marzano tomatoes.",
@@ -11,7 +11,7 @@ let Mainmenu = () => {
     },
     {
       id: 2,
-      img: "/public/menu2.jpg",
+      img: "/menu2.jpg",
       name: "Pizza Quattro Formaggi",
       details:
         "A rich blend of mozzarella, Gorgonzola, Parmesan, and Fontina cheeses.",
@@ -19,7 +19,7 @@ let Mainmenu = () => {
     },
     {
       id: 3,
-      img: "/public/menu3.jpg",
+      img: "/menu3.jpg",
       name: "Pizza Prosciutto e Rucola",
       details:
         "Thin-crust pizza topped with prosciutto, fresh arugula, and shaved Parmesan.",
@@ -27,7 +27,7 @@ let Mainmenu = () => {
     },
     {
       id: 4,
-      img: "/public/menu4.jpg",
+      img: "/menu4.jpg",
       name: "Spaghetti Carbonara",
       details:
         "Traditional Roman pasta dish with creamy egg sauce, pancetta, Pecorino Romano cheese, and black pepper.",
@@ -35,7 +35,7 @@ let Mainmenu = () => {
     },
     {
       id: 5,
-      img: "/public/menu5.jpg",
+      img: "/menu5.jpg",
       name: "Penne Arrabbiata",
       details:
         "Spicy tomato sauce with garlic, chili peppers, and fresh parsley.",
@@ -43,7 +43,7 @@ let Mainmenu = () => {
     },
     {
       id: 6,
-      img: "/public/menu6.jpg",
+      img: "/menu6.jpg",
       name: "Fettuccine Alfredo",
       details:
         "Creamy Alfredo sauce with Parmesan cheese and a touch of nutmeg.",
@@ -51,7 +51,7 @@ let Mainmenu = () => {
     },
     {
       id: 7,
-      img: "/public/menu7.jpg",
+      img: "/menu7.jpg",
       name: "Pollo alla Parmigiana",
       details:
         "Breaded chicken breast topped with marinara sauce and melted mozzarella, served with a side of pasta.",
@@ -59,7 +59,7 @@ let Mainmenu = () => {
     },
     {
       id: 8,
-      img: "/public/menu8.jpg",
+      img: "/menu8.jpg",
       name: "Seafood Paella",
       details:
         "A delightful mix of Arborio rice, shrimp, mussels, clams, and calamari, cooked with saffron and fresh herbs.",
@@ -77,7 +77,7 @@ let Mainmenu = () => {
         >
           <img
             src={dish.img}
-            alt=""
+            alt={dish.name}
             className="h-[290px] w-[590px] sm:w-[700px] sm:h-[300px] md:h-[120px] md:w-[200px] p-1"
           />
           <div className="max-sm:mt-3 md:mt-5 flex flex-col items-stretch w-full">

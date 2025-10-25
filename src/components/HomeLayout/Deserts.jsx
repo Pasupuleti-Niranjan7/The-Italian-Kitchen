@@ -5,7 +5,7 @@ function Deserts() {
   let desserts = [
     {
       id: 1,
-      img: "/public/dessert1.jpg",
+      img: "/dessert1.jpg",
       name: "Tiramisu",
       details:
         "Traditional Italian dessert with layers of espresso-soaked ladyfingers, mascarpone cheese, and cocoa powder.",
@@ -13,7 +13,7 @@ function Deserts() {
     },
     {
       id: 2,
-      img: "/public/dessert2.jpg",
+      img: "/dessert2.jpg",
       name: "Panna Cotta",
       details:
         "Creamy and smooth Italian custard, served with a berry compote.",
@@ -21,7 +21,7 @@ function Deserts() {
     },
     {
       id: 3,
-      img: "/public/dessert3.jpg",
+      img: "/dessert3.jpg",
       name: "Cannoli Siciliani",
       details:
         "Crispy pastry shells filled with sweet ricotta cheese and chocolate chips.",

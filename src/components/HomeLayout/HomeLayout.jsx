@@ -1,4 +1,4 @@
-import Footer from "../../Footer";
+
 import HomeAboutUs from "./HomeAboutUs";
 import HomeBanner from "./HomeBanner"
 import HomeContact from "./HomeContact";

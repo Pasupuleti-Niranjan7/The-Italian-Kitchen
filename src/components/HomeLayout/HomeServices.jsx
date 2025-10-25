@@ -5,14 +5,14 @@ let HomeServices = () => {
         let services = [
           {
             id: 1,
-            img: "/public/services1.jpg",
+            img: "/services1.jpg",
             heading: "Dine-In Experience",
             details:
               "Enjoy a cozy and welcoming atmosphere perfect for any occasion. Our attentive staff and beautiful decor ensure a memorable dining experience.",
           },
           {
             id: 2,
-            img: "/public/services2.jpg",
+            img: "/services2.jpg",
             heading: "Takeaway & Delivery",
             details:
               "Craving Italian food at home? Our takeaway and delivery services ensure you can enjoy our delicious dishes wherever you are.",

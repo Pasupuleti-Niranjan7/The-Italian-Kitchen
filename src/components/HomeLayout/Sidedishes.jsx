@@ -5,14 +5,14 @@ function Sidedishes() {
   let sidedishes = [
     {
       id: 1,
-      img: "/public/sides1.jpg",
+      img: "/sides1.jpg",
       name: "Garlic Bread",
       details: "Freshly baked bread topped with garlic butter and parsley.",
       price: "$4.95",
     },
     {
       id: 2,
-      img: "/public/sides2.jpg",
+      img: "/sides2.jpg",
       name: "Caprese Salad",
       details:
         "Slices of ripe tomatoes, fresh mozzarella, and basil, drizzled with extra virgin olive oil and balsamic glaze.",
@@ -20,7 +20,7 @@ function Sidedishes() {
     },
     {
       id: 3,
-      img: "/public/sides3.jpg",
+      img: "/sides3.jpg",
       name: "Fried Calamari",
       details:
         "Lightly breaded and fried calamari rings, served with marinara sauce.",
@@ -36,7 +36,7 @@ function Sidedishes() {
         >
           <img
             src={sidedish.img}
-            alt=""
+            alt={sidedish.name}
             className="h-[290px] w-[590px] sm:w-[700px] sm:h-[300px] md:h-[120px] md:w-[200px] p-1"
           />
           <div className="max-sm:mt-3 md:mt-5 flex flex-col items-stretch w-full">

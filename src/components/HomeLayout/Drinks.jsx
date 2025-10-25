@@ -4,21 +4,21 @@ function Drinks() {
   let drinks = [
     {
       id: 1,
-      img: "/public/drinks1.jpg",
+      img: "/drinks1.jpg",
       name: "Italian Red Wine",
       details: "A glass of rich and robust Italian red wine.",
       price: "$7.00",
     },
     {
       id: 2,
-      img: "/public/drinks2.jpg",
+      img: "/drinks2.jpg",
       name: "Limoncello Spritz",
       details: "A refreshing blend of Limoncello, Prosecco, and soda water..",
       price: "$8.00",
     },
     {
       id: 3,
-      img: "/public/drinks3.jpg",
+      img: "/drinks3.jpg",
       name: "San Pellegrino Sparkling Water",
       details: "Classic Italian sparkling mineral water.",
       price: "$3.00",
