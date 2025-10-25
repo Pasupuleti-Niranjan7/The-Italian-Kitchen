@@ -42,6 +42,8 @@ let HomeBanner = () => {
           loop
           muted
           playsInline
+          preload="none"
+          poster="/thumbnail.jpg"
           className="h-130 md:h-110 lg:h-150 2xl:h-180 -mt-5 sm:mt-10"
         >
           <source src={video} type="video/mp4" />
