@@ -23,7 +23,6 @@ function HomeMenu() {
   return (
     <>
       <section className="sm:px-8 md:px-10 mx-auto px-5 my-25">
-
         <motion.h3
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -99,7 +98,9 @@ function HomeMenu() {
         {/* Menu Items */}
 
         <section className="flex flex-col justify-start items-center my-15">
-          <h4 className="text-lg md:text-xl lg:text-2xl md:font-semibold lg:font-bold font-medium">{currentMenu}</h4>
+          <h4 className="text-lg md:text-xl lg:text-2xl md:font-semibold lg:font-bold font-medium">
+            {currentMenu}
+          </h4>
           {updateCurrentMenu()}
         </section>
       </section>

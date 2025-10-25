@@ -7,6 +7,7 @@ import Menu from "./components/Menu/Menu";
 import Services from "./components/OurServices/Services";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Contact from "./components/Contact/Contact";
+import Reservation from "./Reservation";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
           <Route path="menu" element={<Menu />} />
           <Route path="services" element={<Services />} />
           <Route path="testimonials" element={<Testimonials />} />
-          <Route path="contact" element={<Contact /> } />
+          <Route path="contact" element={<Contact />} />
+          <Route path="reservation" element={<Reservation />} />
         </Routes>
         <Footer />
       </BrowserRouter>

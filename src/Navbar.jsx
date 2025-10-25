@@ -18,10 +18,15 @@ let Navbar = () => {
     <>
       <header className="shadow-[0_0_1px_2px_#f0f0f0] sticky top-0 max-sm:-mt-2 bg-white">
         <section className="px-5 h-10 flex justify-between md:gap-10 items-center relative py-10 sm:px-8 md:px-10">
+
           {/* For Mobile View */}
           {/* Menu open and close icons*/}
           <div onClick={updateMenu} className="md:hidden">
-            {!menu ? <IoIosMenu size={25} /> : <IoClose size={25} />}
+            {!menu ? (
+              <IoIosMenu size={25} className="cursor-pointer" />
+            ) : (
+              <IoClose size={25} className="cursor-pointer" />
+            )}
           </div>
           {/* Logo and links */}
           <div
@@ -73,6 +78,11 @@ let Navbar = () => {
                 </a>
               </div>
             </div>
+            <div className="flex justify-center my-5 cursor-pointer">
+              <button className="bg-[#000300] text-white px-3 py-2 rounded-md font-medium text-sm lg:text-base ">
+                <Link to="reservation">Make a Reservation</Link>
+              </button>
+            </div>
           </div>
 
           {/* From medium screens */}
@@ -87,7 +97,7 @@ let Navbar = () => {
             <h3 className="tracking-wider font-semibold">Niranjan's Food</h3>
           </div>
 
-          <nav className="hidden md:flex list-none gap-3">
+          <nav className="hidden md:flex list-none gap-4">
             <li className="md:text-base lg:text-lg font-[Radio Canada] font-semibold">
               <Link to="/">Home</Link>
             </li>
@@ -119,7 +129,7 @@ let Navbar = () => {
               </a>
             </div>
             <button className="bg-[#000300] text-white px-3 py-2 rounded-2xl font-medium text-sm lg:text-base max-md:hidden max-lg:hidden">
-              Make a Reservation
+              <Link to="reservation">Make a Reservation</Link>
             </button>
           </div>
         </section>

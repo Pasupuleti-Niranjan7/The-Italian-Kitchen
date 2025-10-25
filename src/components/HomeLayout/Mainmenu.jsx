@@ -3,7 +3,7 @@ let Mainmenu = () => {
   let mainmenu = [
     {
       id: 1,
-      img: "/public/menu1.png",
+      img: "/public/menu1.jpg",
       name: "Pizza Margherita",
       details:
         "Classic Neapolitan pizza topped with fresh mozzarella, basil, and San Marzano tomatoes.",

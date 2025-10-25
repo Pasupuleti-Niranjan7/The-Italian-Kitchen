@@ -5,7 +5,7 @@ let HomeAboutUs = () => {
 
         return (
           <>
-            <section className="flex flex-col justify-between items-center md:justify-start md:flex-row gap-3 pr-4 my-15 bg-gray-50">
+            <section className="flex flex-col justify-between items-center md:justify-start md:flex-row gap-3 pr-4 md:my-15 bg-gray-50">
               <div className="order-2 mt-5 md:order-1">
                 <img
                   src="/public/image1.png"
@@ -35,7 +35,7 @@ let HomeAboutUs = () => {
                   we strive to bring the flavors of Italy to your table. Join us
                   for an unforgettable dining experience.
                 </p>
-                  
+
                 <a
                   href="tel:+918142686499"
                   className="flex bg-orange-300 gap-2 items-center px-3 py-2 lg:px-4 lg:py-3 rounded-xl mx-4 2xl:mx-20 font-medium text-sm sm:text-base"
@@ -44,7 +44,6 @@ let HomeAboutUs = () => {
                   READY TO ORDER?
                 </a>
               </motion.div>
-
             </section>
           </>
         );

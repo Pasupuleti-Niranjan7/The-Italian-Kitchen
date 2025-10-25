@@ -53,7 +53,7 @@ function HomeTestimonials() {
           <p className="h-2 w-2 rounded-full bg-orange-400"></p>
           <p className="h-2 w-2 rounded-full bg-orange-400"></p>
         </motion.div>
-        
+
         {/* Testimonial Section */}
         <section className="my-10 flex flex-col md:flex-row gap-5 justify-center">
           {testimonial.map((cust) => (

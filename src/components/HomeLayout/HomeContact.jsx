@@ -1,5 +1,5 @@
 import emailjs from '@emailjs/browser'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
 let HomeContact = () => {
@@ -8,6 +8,14 @@ let HomeContact = () => {
           phone: "",
           email: "",
         });
+
+        let [activateButton, setActivateButton] = useState(true);
+
+        useEffect(() => {
+          const isEmpty = Object.values(formData).some((v) => v === '');
+
+          setActivateButton(isEmpty)
+        })
 
         const handleChange = (e) => {
           setFormData({
@@ -69,7 +77,6 @@ let HomeContact = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7 }}
                 viewport={{ once: true, amount: 0.3 }}
-                
                 onSubmit={handleSubmit}
                 className="flex flex-col justify-center my-5 gap-5 md:items-center"
               >
@@ -80,6 +87,7 @@ let HomeContact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   className="border border-gray-500/50 p-2 rounded-sm font-medium placeholder:text-gray-500 shadow-[0_0_0px_1px_#f0f0f0] md:w-100 lg:w-160  md:py-3 lg:py-4 focus:outline-amber-400/80 duration-200 placeholder:text-lg placeholder:font-medium"
+                  required
                 />
                 <input
                   type="tel"
@@ -88,6 +96,7 @@ let HomeContact = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   className="border border-gray-500/50 p-2 rounded-sm font-medium placeholder:text-gray-500 shadow-[0_0_0px_1px_#f0f0f0] md:w-100 lg:w-160  md:py-3 lg:py-4 focus:outline-amber-400/80 duration-200 placeholder:text-lg placeholder:font-medium"
+                  required
                 />
                 <input
                   type="email"
@@ -96,10 +105,12 @@ let HomeContact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   className="border border-gray-500/50 p-2 rounded-sm font-medium placeholder:text-gray-500 shadow-[0_0_0px_1px_#f0f0f0] md:w-100 lg:w-160 md:py-3 lg:py-4 focus:outline-amber-400/80 duration-200 placeholder:text-lg placeholder:font-medium"
+                  required
                 />
                 <button
                   type="submit"
                   className="bg-amber-400/80 p-2 rounded-sm font-medium text-lg shadow-[0_0_0px_1px_#f0f0f0] md:w-80 lg:w-120 md:py-2 lg:py-4"
+                  disabled={activateButton}
                 >
                   Contact Us
                 </button>

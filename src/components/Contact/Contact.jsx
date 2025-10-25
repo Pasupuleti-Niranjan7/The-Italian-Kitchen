@@ -1,5 +1,5 @@
 import emailjs from "@emailjs/browser";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 let Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,12 +8,20 @@ let Contact = () => {
     email: "",
   });
 
+  let [activateButton, setActivateButton] = useState(true);
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
+
+  useEffect(() => {
+    const isEmpty = Object.values(formData).some((v) => v === '');
+
+    setActivateButton(isEmpty)
+  })
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -37,6 +45,7 @@ let Contact = () => {
         alert("Failed to send email.");
       });
   };
+  
   return (
     <>
       <section className="flex flex-col justify-center my-35 px-5 sm:px-8 md:px-10">
@@ -50,10 +59,10 @@ let Contact = () => {
           <p className="h-2 w-2 rounded-full bg-orange-400"></p>
         </div>
 
-        <form 
-        onSubmit={handleSubmit}
-        className="flex flex-col justify-center my-5 gap-5 md:items-center">
-
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col justify-center my-5 gap-5 md:items-center"
+        >
           <input
             type="text"
             name="name"
@@ -61,6 +70,7 @@ let Contact = () => {
             value={formData.name}
             onChange={handleChange}
             className="border border-gray-500/50 p-2 rounded-sm font-medium placeholder:text-gray-500 shadow-[0_0_0px_1px_#f0f0f0] md:w-100 lg:w-160  md:py-3 lg:py-3 focus:outline-amber-400/80 duration-200 placeholder:text-lg placeholder:font-medium"
+            required
           />
           <input
             type="phone"
@@ -69,6 +79,7 @@ let Contact = () => {
             placeholder="Phone"
             onChange={handleChange}
             className="border border-gray-500/50 p-2 rounded-sm font-medium placeholder:text-gray-500 shadow-[0_0_0px_1px_#f0f0f0] md:w-100 lg:w-160  md:py-3 lg:py-3 focus:outline-amber-400/80 duration-200 placeholder:text-lg placeholder:font-medium"
+            required
           />
           <input
             type="email"
@@ -77,11 +88,13 @@ let Contact = () => {
             placeholder="Email"
             onChange={handleChange}
             className="border border-gray-500/50 p-2 rounded-sm font-medium placeholder:text-gray-500 shadow-[0_0_0px_1px_#f0f0f0] md:w-100 lg:w-160 md:py-3 lg:py-3 focus:outline-amber-400/80 duration-200 placeholder:text-lg placeholder:font-medium"
+            required
           />
           <div className="flex justify-center">
             <button
               type="submit"
               className="bg-amber-400/80 p-2 rounded-sm font-medium text-lg shadow-[0_0_0px_1px_#f0f0f0] w-65 md:w-80 lg:w-120 md:py-2 lg:py-3"
+              disabled={activateButton}
             >
               Contact Us
             </button>
